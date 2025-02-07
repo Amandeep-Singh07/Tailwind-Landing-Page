@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+     
+</head>
+<body>
+
+    <!-- Navbar -->
+
+     <nav class="p-3 flex bg-white justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <img src="./assets/asset 0.png" alt="Logo">
+            <span class="text-lg font-bold ">ToDesktop</span>
+        </a>
+
+        <div id="nav-menu" class="hidden lg:flex gap-12">
+            <a href="#" class="font-medium hover:text-blue-600">Pricing</a>
+            <a href="#" class="font-medium hover:text-blue-600">Docs</a>
+            <a href="#" class="font-medium hover:text-blue-600">Changelog</a>
+            <a href="#" class="font-medium hover:text-blue-600">Blogs</a>
+            <a href="#" class="font-medium hover:text-blue-600">Login</a>
+        </div>
+        <!-- while making i am using mobile first approach , it means how it will look in mobile screen firstly then large screens or medium screens -->
+        <button class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+            <img src="./assets/asset 1.svg" alt="">
+            <span>Electron Developers</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="p-2 lg:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+
+
+        <div id="nav-dialog" class="hidden fixed inset-0 z-10 md:hidden bg-white p-3">
+            <div id="nav-bar" class="flex justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+            <img src="./assets/asset 0.png" alt="Logo">
+            <span class="text-lg font-bold ">ToDesktop</span>
+        </a>
+         <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-xmark text-gray-600"></i>
+        </button>
+            </div>
+
+        <div class="mt-6">
+            <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Pricing</a>
+            <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Docs</a>
+            <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Changelog</a>
+            <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Blogs</a>
+            <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Login</a>
+        </div>
+
+        <!-- horizontal line -->
+        <div class="h-[1px] bg-gray-300"></div>
+            
+        <button class="mt-6 w-full flex gap-2 items-center px-6 py-4 rounded-lg hover:bg-gray-50">
+            <img src="./assets/asset 1.svg" alt="">
+            <span>Electron Developers</span>
+        </button>
+    </div>
+
+     </nav>
+
+ 
+<script src="./src/script.js"></script>
+</body>
+</html>
+

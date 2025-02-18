@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+
      
 </head>
 <body>
@@ -68,6 +69,22 @@
     </div>
 
      </nav>
+
+     <main>
+        <!-- hero section -->
+         <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
+             <div id="hero-container" class="max-w-4xl mx-auto px-6 pb-32 flex flex-col ">
+
+                <div id="version-text" class="flex items-center my-6 gap-2 border border-yellow-300 px-3 py-1 w-fit bg-yellow-50 rounded-lg font-medium text-yellow-600 shadow-md hover:shadow-lg hover:-translate-y-1 transition group" >
+                    <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600 "></div>
+                    <p>v0.21.1: <span class="text-yellow-800">Find-in-page bug fixes</span></p>
+                    <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition"></i>
+                </div>
+             </div>
+
+         </div>
+        
+     </main>
 
  
 <script src="./src/script.js"></script>
